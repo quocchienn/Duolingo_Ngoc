@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background-color: #58cc02;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.product h3, .product p {
+    margin: 0 0 10px;
+}
+
+.product .bonus {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.product button {
+    background-color: #58cc02;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.product button:hover {
+    background-color: #4ab002;
+}
+
+.form-container {
+    margin-top: 20px;
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-container h3 {
+    margin-top: 0;
+}
+
+.form-container input {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.qr-code {
+    margin: 10px 0;
+}
+
+.qr-code img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-container button {
+    background-color: #58cc02;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form-container button:hover {
+    background-color: #4ab002;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    max-width: 300px;
+    text-align: center;
+}
+
+.popup.success {
+    border: 2px solid #58cc02;
+}
+
+.popup.error {
+    border: 2px solid #e74c3c;
+}
+
+.popup h3 {
+    margin: 0 0 10px;
+}
+
+.popup button {
+    background-color: #58cc02;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup button:hover {
+    background-color: #4ab002;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+}
